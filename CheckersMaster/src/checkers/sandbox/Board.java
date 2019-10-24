@@ -53,19 +53,19 @@ public class Board extends JPanel {
 	}
 
 	public Board() throws IOException {
-		File f = new File("./img/board.jpg");
+		File f = new File("img/board.jpg");
 		board = ImageIO.read(f);
 		
-		f = new File("./img/white.gif");
+		f = new File("img/white.gif");
 		black = ImageIO.read(f);
 		
-		f = new File("./img/black.gif");
+		f = new File("img/black.gif");
 		white = ImageIO.read(f);
 		
-		f = new File("./img/kingWhite.gif");
+		f = new File("img/kingWhite.gif");
 		kingBlack = ImageIO.read(f);
 		
-		f = new File("./img/kingBlack.gif");
+		f = new File("img/kingBlack.gif");
 		kingWhite = ImageIO.read(f);
 		
 		addMouseListener(new BoardMouseListener());
